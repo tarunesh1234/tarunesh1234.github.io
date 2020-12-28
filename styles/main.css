@@ -7253,13 +7253,21 @@ Created using IcoMoon - icomoon.io
   color: #1da1f2;
 }
 
-.cc-google-plus:hover i {
-  color: #dd4b39;
+.cc-linkedin:hover i {
+  color: #1da1f2;
+}
+
+.cc-github:hover i {
+  color: #000;
 }
 
 .cc-instagram:hover i {
-  color: #405de6;
+  color: #8a3ab9;
 }
+.cc-quora:hover i {
+  color:  #a62100;
+}
+
 
 /* Credit Style */
 a.credit {
@@ -7273,3 +7281,28 @@ a.credit {
 .section {
   padding-bottom: 0;
 }
+
+.ccf {
+  background-color: #3b5998;
+}
+
+.cct {
+  background-color: #1da1f2;
+}
+
+.ccg {
+  background-color: #000;
+}
+
+.ccl {
+  background-color: #1da1f2;
+}
+
+.cci {
+  background-color: #8a3ab9;
+}
+
+.ccq {
+  background-color:  #a62100;
+}
+
