@@ -4729,6 +4729,9 @@ Created using IcoMoon - icomoon.io
 
 .footer {
   padding: 24px 0;
+  color: #fff;
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.6));
+  background-color : darkblue;
 }
 
 .footer.footer-default {
@@ -7267,6 +7270,9 @@ Created using IcoMoon - icomoon.io
 .cc-quora:hover i {
   color:  #a62100;
 }
+.cc-telegram:hover i {
+  color:  #a62100;
+}
 
 
 /* Credit Style */
@@ -7282,27 +7288,12 @@ a.credit {
   padding-bottom: 0;
 }
 
-.ccf {
-  background-color: #3b5998;
+
+.skill-icon { 
+  max-height : 100px;
+  margin : 0.6rem;
 }
 
-.cct {
-  background-color: #1da1f2;
+footer .btn.btn-link {
+  color: #fff;
 }
-
-.ccg {
-  background-color: #000;
-}
-
-.ccl {
-  background-color: #1da1f2;
-}
-
-.cci {
-  background-color: #8a3ab9;
-}
-
-.ccq {
-  background-color:  #a62100;
-}
-
