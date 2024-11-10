@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting | blogspot</title>
+    <style>
+      /* Center the message on the page */
+      body,
+      html {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        /* font-family: Arial, sans-serif; */
+        /* background-color: #f0f0f0; */
+        background-image: linear-gradient(
+          to bottom,
+          #2e65b8,
+          #007ec9,
+          #0096d4,
+          #00acda,
+          #10c2dd
+        );
+      }
+      .message {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        width: 50%;
+        /* color: #333; */
+      }
+    </style>
+    <script>
+      // Redirect after 10 seconds
+      setTimeout(() => {
+        window.location.href = "https://blog.tarunxsh.xyz"; // Change to your target URL
+      }, 10000);
+    </script>
+  </head>
+  <body>
+    <div class="message">
+      The project may take some time to start on the first run because it is
+      hosted on <a href="https://render.com/">Render’s </a> free plan.
+      Redirecting you to the project now, Please wait. Thank you.
+    </div>
+  </body>
+</html>
