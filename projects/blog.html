@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redirecting | blogspot</title>
+    <title>Redirecting...</title>
     <style>
       /* Center the message on the page */
       body,
@@ -13,7 +13,7 @@
         align-items: center;
         justify-content: center;
         margin: 0;
-        /* font-family: Arial, sans-serif; */
+        font-family: Arial, sans-serif;
         /* background-color: #f0f0f0; */
         background-image: linear-gradient(
           to bottom,
@@ -24,26 +24,63 @@
           #10c2dd
         );
       }
-      .message {
+      .container {
         text-align: center;
         font-size: 1.5em;
         font-weight: bold;
         width: 50%;
-        /* color: #333; */
+        color: #222;
+      }
+      .button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+      .button:hover {
+        background-color: #0056b3;
       }
     </style>
     <script>
-      // Redirect after 10 seconds
-      setTimeout(() => {
+      let countdown = 10; // Set the countdown duration in seconds
+
+      // Function to update the countdown and handle redirection
+      function updateCountdown() {
+        const countdownElement = document.getElementById("countdown");
+        countdownElement.textContent = countdown;
+
+        if (countdown === 0) {
+          redirect();
+        } else {
+          countdown--;
+          setTimeout(updateCountdown, 1000);
+        }
+      }
+
+      // Function to redirect
+      function redirect() {
         window.location.href = "https://blog.tarunxsh.xyz"; // Change to your target URL
-      }, 10000);
+      }
+
+      // Start countdown when page loads
+      window.onload = updateCountdown;
     </script>
   </head>
   <body>
-    <div class="message">
-      The project may take some time to start on the first run because it is
-      hosted on <a href="https://render.com/">Render’s </a> free plan.
-      Redirecting you to the project now, Please wait. Thank you.
+    <div class="container">
+      <p>
+        The project may take some time to start on the first run because it is
+        hosted on <a href="https://render.com/">Render’s </a> free plan.
+      </p>
+      <p>
+        You are being redirected in <span id="countdown">10</span> seconds...
+      </p>
+      <p>Thank you</p>
+      <button class="button" onclick="redirect()">Redirect Now</button>
     </div>
   </body>
 </html>
